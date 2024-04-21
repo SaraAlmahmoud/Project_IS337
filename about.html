@@ -1,0 +1,143 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+    <meta http-equiv="refresh" content="43200">
+  <link rel="stylesheet" type="text/css" href="formating.css" />
+</head>
+
+<body id="top">
+  <div id="header">
+    <div id="logo">
+  <img src="logo.png" width="200" height="130"/>		
+  <a href="#" class="hbutton">sign in</a>
+    <a href="#" class="hbutton">sign up</a> 
+    </div>
+     
+      <div id="menubar">
+        <ul id="menu">
+          <li ><a href="homepage.html">Home</a></li>
+          <li class="selected"><a href="about.html">about us</a></li>
+          <li><a href="Contact.html">Contact us</a></li>
+	       <li><a href="Profile.html">Profile</a></li>
+         <li><a href="product_register.html">Product Registration</a></li>
+         <li><a href="productList.html">Product List</a></li>
+            <li class="dropdown">
+                 <a href="gallary.html"> <class="drop-btn"> Product Gallery</a>
+                <div class="dropdown-content">
+                    <a href="makeup.html">Makeup</a>
+                    <a href="skincare.html">Skincare</a>
+                    <a href="perfume.html">Perfume</a>
+                   
+                </div>
+            </li>
+
+        </ul>
+      </div>
+	
+	<div class="bg_img" id="site_content">
+      <div id="content">
+		<h1>About Us</h1>
+<br>
+		<p>Beauty Luxe Cosmetics is a premium beauty and makeup brand that offers a wide range of high-quality products for the skin, face, and body. Our products are carefully crafted with the finest ingredients to provide you with a luxurious and indulgent experience.
+
+		</p>
+		<p>Our product line includes a variety of beauty and makeup products, such as skincare, makeup, fragrances, and body care. We believe that beauty should be fun, effortless, and accessible to everyone, which is why we offer a wide range of products to suit every skin type, skin tone, and style.
+
+		</p>
+    <p>Our mission is to help you feel confident and beautiful inside and out, and we are committed to delivering the highest quality products that help you achieve this.</p>
+		
+    <br>
+    <div class="slideshow-container">
+		  <div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="d1.jpg" style="width:100%">
+			<div class="text">devloper1</div>
+		  </div>
+
+
+		  <div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="d2.jpg" style="width:100%">
+			<div class="text">developer2</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="d3.jpg" style="width:100%">
+			<div class="text">developer3</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="d4.jpg" style="width:100%">
+			<div class="text">developer4</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="d5.jpg" style="width:100%">
+			<div class="text">developer5</div>
+		  </div>
+
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		</div> 
+	  </div>
+
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+<br>
+
+<br>
+
+</div>
+<br>
+    <div id="footer">
+      <p>
+       &copy; Beauty Luxe Cosmetics <sup></sup>
+    <a href="#top">UP</a>
+      </p>
+    </div>
+	<br>
+</div>
+
+</body>
+</html>
+

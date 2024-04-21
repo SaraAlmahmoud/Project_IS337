@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Skincare</title>
+     <meta http-equiv="refresh" content="43200">
+
+  <link rel="stylesheet" type="text/css" href="formating.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="top">
+     <div id="header">
+      <div id="logo">
+		<img src="logo.png" width="200" height="130"/>	
+		<a href="#" class="hbutton">sign in</a>
+	    <a href="#" class="hbutton">sign up</a> 
+      </div>
+	 
+	  <div id="menubar">
+        <ul id="menu">
+			<li ><a href="homepage.html">Home</a></li>
+			<li class="selected"><a href="about.html">about us</a></li>
+			<li><a href="Contact.html">Contact us</a></li>
+			 <li><a href="Profile.html">Profile</a></li>
+		   <li><a href="product_register.html">Product Registration</a></li>
+		   <li><a href="productList.html">Product List</a></li>
+			  <li class="dropdown">
+				   <a href="gallary.html"> <class="drop-btn"> Product Gallery</a>
+				  <div class="dropdown-content">
+					  <a href="makeup.html">Makeup</a>
+					  <a href="skincare.html">Skincare</a>
+					  <a href="perfume.html">Perfume</a>
+                    
+                </div>
+            </li>
+
+        </ul>
+      </div>
+	  <div class="bg_img" id="site_content">
+        <div id="content">
+      <div style="overflow:auto; margin:15px;">
+        <button class="button" onclick="Calc_Total_purchases();">Calculatiobn Total Purchases </button>
+        <h1 style="float:right; background-color:white; color:darkred;"  id="result"></h1>
+         </div>
+         
+         <hr>
+        
+         
+        <div id="product">
+        
+          <div style="overflow:auto; margin:15px;">
+            
+             
+             <div class="gallery" onclick="showinfo('Item #1 - price 130$ ')" >
+              <a   href="#">
+              <img src="skincare1.jpg" >
+              </a>
+              <div id="d1" class="desc">price 130$ </div>
+            </div>
+    
+            <div class="gallery" onclick="showinfo('Item #2 - price 122$ ')">
+              <a   href="#">
+              <img src="skincare2.jpg"  >
+              </a>
+              <div id="d2" class="desc">price 122$</div>
+            </div>
+    
+            <div class="gallery" onclick="showinfo('Item #3 - price 231$')">
+              <a   href="#">
+              <img src="skincare3.jpg"  >
+              </a>
+              <div class="desc">price 213$</div>
+            </div>
+            </div>
+          </div>
+		  <br>
+		  <div id="footer">
+			  <p>
+			 &copy; Beauty Luxe Cosmetics <sup></sup>
+		  <a href="#top">UP</a>
+			</p>
+		  </div>
+    <script>
+	    function showinfo(e,p){
+			alert(e);
+			
+			document.getElementById(p).style.display='block';
+		}
+		
+		function Calc_Total_purchases(){
+			var purchases = parseInt(prompt("Please enter your purchase prices"));
+			var total=0;	
+			if(purchases > 1000){
+			    total= purchases - ((purchases/100) * 9);
+			}else if(purchases <= 1000  && purchases >= 500){
+			    total= purchases - ((purchases/100) * 4);
+			}else if(purchases < 500){
+				total= purchases;
+			}			
+			
+			var result= document.getElementById('result');
+			result.innerHTML="Your total purchases = " + total  ;
+		}
+	</script>
+</body>
+</html>

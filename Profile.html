@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+     <meta http-equiv="refresh" content="43200">
+
+  <link rel="stylesheet" type="text/css" href="formating.css" />
+</head>
+
+<body id="top">
+    <div id="header">
+		<div id="logo">
+		  <img src="logo.png" width="200" height="130"/>		
+		  <a href="#" class="hbutton">sign in</a>
+		  <a href="#" class="hbutton">sign up</a> 
+		</div>
+		
+		<div id="menubar">
+			<ul id="menu">
+				<li ><a href="homepage.html">Home</a></li>
+				<li class="selected"><a href="about.html">about us</a></li>
+				<li><a href="Contact.html">Contact us</a></li>
+				 <li><a href="Profile.html">Profile</a></li>
+			   <li><a href="product_register.html">Product Registration</a></li>
+			   <li><a href="productList.html">Product List</a></li>
+				  <li class="dropdown">
+					   <a href="gallary.html"> <class="drop-btn"> Product Gallery</a>
+					  <div class="dropdown-content">
+						  <a href="makeup.html">Makeup</a>
+						  <a href="skincare.html">Skincare</a>
+						  <a href="perfume.html">Perfume</a>
+					</div>
+				</li>
+	
+			</ul>
+		  </div>
+
+
+	<div class="bg_img" id="site_content">
+      <div id="content">
+		<h1>Customer Profile page</h1>
+	
+		 <form method="post" autocomplete action="#">
+			  <label for="fanem"> Firstname:</label><br>
+			  <input id="fname" type="text" name="name" placeholder="First Name" required><br>
+			 
+			 <label for="Lname"> Last name:</label><br>
+			  <input id="Lname" type="text" name="lname" placeholder="last Name" required><br>
+			  
+			  <label for="dateofbirth"> date of birth:</label><br>
+			  <input id="dateofbirth" type="date" name="date_birth" placeholder="date of birth required"><br>
+				
+			  <label for="country">Country:</label><br>
+			  <input id="country" type="text" name="Country" placeholder="home town" required><br>
+			 
+  			  <label for="mobnum">mobile:</label><br>
+			  <input id="mobnum" type="tel" name="mobile" pattern="[0-9]{10}" required><br>
+			   
+			   <label for="email">Email:</label><br>
+			  <input id="email" type="email" name="email" required><br>
+			  
+				<label>Comment:</label><br>
+			  <textarea name="Comment"></textarea><br>
+			  
+		   <input class="button" type="submit" value="Submit"/>
+		   <input class="button" type="Reset" value="Clear"/>
+		   </p>
+		 </form>
+		
+	   </div>
+    </div>
+<br>
+<br>
+<div id="footer">
+	<p>
+   &copy; Beauty Luxe Cosmetics <sup></sup>
+<a href="#top">UP</a>
+  </p>
+</div>
+
+</div>
+
+
+</body>
+</html>

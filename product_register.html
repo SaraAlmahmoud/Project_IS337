@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Product Registration</title>
+  <meta http-equiv="refresh" content="43200">
+  
+  <link rel="stylesheet" type="text/css" href="formating.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="top">
+  <div id="header">
+   <div id="logo">
+	 <img src="logo.png" width="200" height="130"/>	
+	 <a href="#" class="hbutton">sign in</a>
+	 <a href="#" class="hbutton">sign up</a> 
+   </div>
+  
+   <div id="menubar">
+	 <ul id="menu">
+	  <li ><a href="homepage.html">Home</a></li>
+	  <li class="selected"><a href="about.html">about us</a></li>
+	  <li><a href="Contact.html">Contact us</a></li>
+	   <li><a href="Profile.html">Profile</a></li>
+	 <li><a href="product_register.html">Product Registration</a></li>
+	 <li><a href="productList.html">Product List</a></li>
+		<li class="dropdown">
+			 <a href="gallary.html"> <class="drop-btn"> Product Gallery</a>
+			<div class="dropdown-content">
+				<a href="makeup.html">Makeup</a>
+				<a href="skincare.html">Skincare</a>
+				<a href="perfume.html">Perfume</a>
+				
+			 </div>
+		 </li>
+
+	 </ul>
+   </div>
+
+	
+	<div class="bg_img" id="site_content">
+      <div id="content">
+		<h1>Product Registration page:</h1>
+		
+		
+		<h3 id="msg" style="display:none; color:green;">
+			New record created successfully
+		</h3>
+		<!--screanshot-->
+			 <form method="post" action="product_register.php">
+			  <label>Product name:</label><br>
+			  <input required type="text" name="name" placeholder="name"><br>
+			  
+			  <label>price</label><br>
+			  <input type="number" class="input_num" name="price" placeholder="price"><br>
+			  
+			  <label>code</label><br>
+			  <input type="text" pattern="[0-9]{2}-[0-9]{3}" name="code" placeholder="11-231"><br>
+			  
+			  <label>country of origin</label><br>
+			  <input type="text" name="country" placeholder="country of origin"><br>
+			  
+			  <label>expiration date</label><br>
+			  <input type="date" name="expiration_date"><br>
+
+		   <input class="button" type="submit" value="register"/>
+		   <input class="button" type="Reset" value="Clear"/>
+		   </p>
+		 </form>
+		
+		
+		
+	   </div>
+    </div>
+	<br>
+    <div id="footer">
+        <p>
+	   &copy; Beauty Luxe Cosmetics <sup></sup>
+	<a href="#top">UP</a>
+	  </p>
+    </div>
+	
+	
+	<script>
+	
+      var url = window.location.href;
+
+	   if(url.includes('msg')){ 
+	      document.getElementById("msg").style.display = 'block'; 
+	   } 
+	</script>
+</body>
+</html>

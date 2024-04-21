@@ -1,0 +1,10 @@
+m1=DIOR FOREVER SKIN GLOW
+m2=Anastasia Beverly Hills Soft Glam Eyeshadow Palette
+m3=RADIANT CREAMY CONCEALER
+pr1=Scandal By Night Eau de Parfum
+pr2=Le Gemme Falkar Eau de Parfum
+pr3=Gucci Bloom Eau de Parfum
+pr4=COCO MADEMOISELLE L’Eau Privée
+sk1=The Ordinary Glycolic Acid 7% Toning
+sk2=KIEHL'S Turmeric & Cranberry Seed Energising Radiance Masque, 100ml
+sk3=KIEHL'S Super Multi-Corrective Eye Zone Treatment, 28ml
